@@ -15,23 +15,27 @@ export const Avatar = styled.Image`
   height: 35px;
   justify-content: center;
   padding:  0 10px;
+  border-radius: 35px;
 `;
 
 export const Info = styled.View`
   display: flex;
-  flex-grow: 1;
+  flex: 1;
   flex-direction: column;
   padding-left: 20px;
 `;
 
-export const Name = styled.Text`
+export const Name = styled.Text.attrs({
+  numberOfLines: 1,
+  ellipsizeMode: 'tail',
+})`
   color: ${grayDarker};
-  font-size: 18px;
+  font-size: 14px;
 `;
 
 export const Owner = styled.Text`
   color: ${grayDark};
-  font-size: 14px;
+  font-size: 12px;
 `;
 
 export const Submit = styled.TouchableOpacity`

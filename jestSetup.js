@@ -1,5 +1,7 @@
+/* eslint-disable */
 import { NativeModules as RNNativeModules } from "react-native";
 
+// Fix for React Native Gesture Handler to work with Jest
 RNNativeModules.UIManager = RNNativeModules.UIManager || {};
 RNNativeModules.UIManager.RCTView = RNNativeModules.UIManager.RCTView || {};
 RNNativeModules.RNGestureHandlerModule = RNNativeModules.RNGestureHandlerModule || {

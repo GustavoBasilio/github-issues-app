@@ -1,24 +1,25 @@
 import React from 'react';
-import { Text } from 'react-native';
-import { createAppContainer, createStackNavigator} from 'react-navigation';
+import { createAppContainer, createStackNavigator } from 'react-navigation';
 
 import Repositories from './pages/Repositories';
+import Issues from './pages/Issues';
 
+// Creating the Routes and to Header
 const Routes = createAppContainer(
-    createStackNavigator({
-        Repositories
-    }, {
-        headerLayoutPreset: 'center',
-        defaultNavigationOptions: {
-            headerTitleStyle: {
-                color: "green"
-            },
-            headerTitle: <Text>Git Issues</Text>,
-            headerStyle: {
-                backgroundColor: '#FFF',
-            }
-        }
-    })
+  createStackNavigator({
+    Repositories,
+    Issues,
+  },
+  {
+    headerLayoutPreset: 'center',
+    defaultNavigationOptions: {
+      headerTitleStyle: {
+        color: 'black',
+        fontWeight: 'bold',
+      },
+      title: 'Git Issues',
+    },
+  }),
 );
 
 export default Routes;
