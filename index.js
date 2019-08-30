@@ -2,10 +2,8 @@
  * @format
  */
 
-import tron from './ReactotronConfig';
-
 if(__DEV__) {
-    tron().then(() => console.log('Reactotron Configured'));
+    import('./ReactotronConfig').then(() => console.log('Reactotron Configured'));
 }
 
 import {AppRegistry} from 'react-native';

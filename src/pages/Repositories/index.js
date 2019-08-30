@@ -19,7 +19,7 @@ const Repositories = () => {
     const [insert, setInsert] = useState('');
     const [error, setError] = useState(false);
     const [repositories, setRepositories] = useState([]);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     async function loadRepositories() {
         setLoading(true);

@@ -34,7 +34,7 @@ export const Submit = styled.TouchableOpacity`
     padding-left: 15px;
 `;
 
-export const List = styled.TouchableOpacity.attrs({
+export const List = styled.FlatList.attrs({
     showsVerticalScrollIndicator: false
 })`
     padding-top: 10px;
