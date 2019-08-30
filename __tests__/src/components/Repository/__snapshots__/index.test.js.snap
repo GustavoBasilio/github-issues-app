@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 6,
+        "display": "flex",
+        "flexDirection": "row",
+        "marginBottom": 10,
+        "paddingBottom": 20,
+        "paddingLeft": 20,
+        "paddingRight": 20,
+        "paddingTop": 20,
+      },
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "height": 35,
+          "justifyContent": "center",
+          "paddingBottom": 0,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 0,
+          "width": 35,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "paddingLeft": 20,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#373737",
+            "fontSize": 18,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#E5E5E5",
+            "fontSize": 14,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#E5E5E5",
+            "fontSize": 30,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;

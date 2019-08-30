@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#EEEEEE",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "paddingBottom": 0,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+        "paddingTop": 0,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderBottomColor": "#E5E5E5",
+          "borderBottomWidth": 2,
+          "borderStyle": "solid",
+          "display": "flex",
+          "flexDirection": "row",
+          "marginBottom": 15,
+          "paddingBottom": 10,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 15,
+        },
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      autoCapitalize="none"
+      autoCorrect={false}
+      error={false}
+      onChangeText={[Function]}
+      placeholder="Adicionar novo repositório"
+      placeholderTextColor="#E5E5E5"
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E5E5E5",
+            "borderRadius": 6,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontSize": 14,
+            "paddingBottom": 5,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+            "paddingTop": 5,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+    />
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "justifyContent": "center",
+            "paddingLeft": 15,
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontSize": 20,
+            },
+            undefined,
+            Object {
+              "fontFamily": "FontAwesome",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+    </TouchableOpacity>
+  </View>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    data={Array []}
+    keyExtractor={[Function]}
+    keyboardShouldPersistsTaps="handled"
+    onRefresh={[Function]}
+    refreshing={false}
+    renderItem={[Function]}
+    showsVerticalScrollIndicator={false}
+    style={
+      Array [
+        Object {
+          "paddingTop": 10,
+        },
+      ]
+    }
+  />
+</View>
+`;

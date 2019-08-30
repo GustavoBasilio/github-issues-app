@@ -8,20 +8,63 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.6.1",
+    "axios": "^0.19.0",
     "react": "16.8.6",
-    "react-native": "0.60.5"
+    "react-native": "0.60.5",
+    "react-native-gesture-handler": "^1.4.1",
+    "react-native-reanimated": "^1.2.0",
+    "react-native-vector-icons": "^6.6.0",
+    "react-navigation": "^3.12.1",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
     "@babel/runtime": "7.5.5",
     "@react-native-community/eslint-config": "0.0.3",
+    "@testing-library/react-native": "^4.0.8",
+    "babel-eslint": "^10.0.3",
     "babel-jest": "24.9.0",
-    "eslint": "6.2.2",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "24.9.0",
+    "jest-styled-components": "^6.3.3",
     "metro-react-native-babel-preset": "0.54.1",
-    "react-test-renderer": "16.8.6"
+    "react-test-renderer": "16.8.6",
+    "reactotron-react-native": "^3.6.5"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "@testing-library/react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@react-native-community|react-native|react-native-vector-icons|react-navigation|@react-navigation|react-native-screens|react-native-gesture-handler|react-native-safe-area-view)/)"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "!src/service/api.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "package.json",
+      "package-lock.json",
+      "__tests__",
+      "coverage"
+    ],
+    "coverageDirectory": "__tests__/coverage",
+    "moduleNameMapper": {
+      "ˆ~/(.*)": "<rootDir>/src/$1",
+      "styled-components": "styled-components/native",
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "identity-obj-proxy"
+    },
+    "setupFiles": [
+      "./jestSetup.js"
+    ],
+    "transform": {
+        "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    }
   }
 }

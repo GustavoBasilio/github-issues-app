@@ -2,8 +2,14 @@
  * @format
  */
 
+import tron from './ReactotronConfig';
+
+if(__DEV__) {
+    tron().then(() => console.log('Reactotron Configured'));
+}
+
 import {AppRegistry} from 'react-native';
-import App from './App';
+import App from './src';
 import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => App);
+export default AppRegistry.registerComponent(appName, () => App);
